@@ -1,0 +1,49 @@
+.reveal-links-section {
+  display: grid;
+  place-content: center;
+  gap: 0.5rem;
+  background-color: #a7f3d0; /* A light green color */
+  padding: 6rem 2rem;
+  color: black;
+  height: 100vh;
+}
+
+.flip-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 2.25rem; /* 36px */
+  font-weight: 900;
+  text-transform: uppercase;
+
+  /* ---- FINAL FIX IS HERE ---- */
+  /* Increase the line-height a bit more */
+  line-height: 0.95;
+}
+
+/* Responsive font sizes */
+@media (min-width: 640px) {
+  .flip-link {
+    font-size: 4.5rem; /* 72px */
+  }
+}
+@media (min-width: 768px) {
+  .flip-link {
+    font-size: 6rem; /* 96px */
+  }
+}
+@media (min-width: 1024px) {
+  .flip-link {
+    font-size: 8rem; /* 128px */
+  }
+}
+
+.flip-link-text {
+  display: inline-block;
+}
+
+.flip-link-text-bottom {
+  position: absolute;
+  inset: 0;
+}
